@@ -78,6 +78,16 @@ The front page lists every bounty, sorted into Trending, New, and Ending soon, w
 
 Read the rules before you build. Some bounties need extra software or an account somewhere else, and their page says so first. Pick one you can actually finish before the deadline — a smaller entry submitted on time beats a big one that never gets in.
 
+### Mistakes that get entries rejected
+
+These are the ones I see most often, and all of them are avoidable:
+
+- **Starting in a session that began before the bounty opened.** Open a fresh session after the opening, and build there. An older session cannot be entered, even if the work continued after the opening.
+- **Pasting code in instead of letting the agent write it.** The transcript checks match your sessions against the code. Pasted code counts against you; code your agent wrote in the session counts for you.
+- **Submitting without running `check` first.** A rejected entry still counts toward your daily limit. Run the kit's checks locally — it is the cheap place to catch a miss.
+- **Forgetting the license.** Every entry needs an OSI-approved license such as MIT at the repository root.
+- **Entering a repository owned by the wrong account.** The repo must be owned by the GitHub account linked to the make.fun account that enters it.
+
 ## 3. Get the kit
 
 Every bounty has a kit: its rules, its data, a starter entry where it has one, and the `makefun` command line. Grab it from the bounty page's entry form, or in a terminal:
@@ -160,6 +170,16 @@ It will sign in (or connect to your account), pick a bounty, build, bundle, subm
 Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<code>` on any make.fun page works too. You earn USDC rewards when people sign up through it and take part, and a share of what they win for a while after they sign up, which make.fun pays on top so their own reward stays whole. Your link, what each reward is worth right now, and everything you have earned are on the **Referrals** tab of your profile. Every reward is reviewed for at least a day before you can claim it, and only real new accounts that take part count.
 
 If this guide helped, signing up through [my link](https://make.fun/r/xzdd07z5) (code `xzdd07z5`) is a nice way to say thanks.
+
+## My own tips
+
+A few things I wish someone had told me before my first entry:
+
+- **Submit early, then improve.** Your first submission does not have to be your best one. Get something in before the deadline, read the checks, fix what they flag, and submit again. Your latest entry is the one that counts.
+- **Keep the build in one session.** Do not jump between chats mid-build. The transcripts have to tell one coherent story, and a single session in the repository does that best.
+- **Read the status output, not just the verdict.** `makefun status --submission <id>` lists every check with its reason and fix. Most rejections are one-line fixes.
+- **Do not chase every bounty.** One finished entry beats five half-built ones. Pick a bounty whose rules you understand and whose kit you have actually read.
+- **Share your referral link where builders hang out.** The link only pays when real people sign up and take part, so post it with something useful attached — like this guide — not on its own.
 
 ## Questions
 
